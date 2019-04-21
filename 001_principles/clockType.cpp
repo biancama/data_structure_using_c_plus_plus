@@ -47,17 +47,8 @@ void clockType::incrementHours() {
 }
 
 bool clockType::operator==(const clockType &other) const {
-    unsigned int hours, minutes, seconds;
-    other.getTime(hours, minutes, seconds);
-    if (_hours != hours) {
-        return false;
-    }
-    if (_minutes != minutes) {
-        return false;
-    }
-    if (_seconds != seconds) {
-        return false;
-    }
-
+     if (_hours != other._hours || _minutes != other._minutes || _seconds != other._seconds) {
+         return false;
+     }
     return true;
 }
