@@ -31,6 +31,18 @@ public:
     //Constructor with parameters.
     //Sets firstName and lastName according to the parameters.
     //Postcondition: firstName = first; lastName = last;
+
+    personType& setFirstName(string first);
+    //Function to set the first name.
+    //Postcondition: firstName = first
+    // After setting the first name, a reference to the
+    // object, that is, the address of the object, is
+    // returned.
+    personType& setLastName(string last);
+    //Function to set the last name.
+    //Postcondition: lastName = last
+    // After setting the last name, a reference to the object,
+    // that is, the address of the object, is returned.
 private:
     string firstName; //variable to store the first name
     string lastName; //variable to store the last name

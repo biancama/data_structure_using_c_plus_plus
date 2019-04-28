@@ -31,3 +31,13 @@ personType::personType() {
 personType::personType(string first, string last) {
     setName(first, last);
 }
+
+personType &personType::setFirstName(string first) {
+    firstName =  first;
+    return *this;
+}
+
+personType &personType::setLastName(string last) {
+    lastName = last;
+    return *this;
+}
